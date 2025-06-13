@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KsaInovasi - Company Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-code"></i>
+                <h1>KsaInovasi</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Solusi Teknologi Terdepan untuk Bisnis Anda</h2>
+                    <p>Kami menyediakan produk dan layanan teknologi inovatif untuk membantu bisnis Anda berkembang di era digital.</p>
+                    <div class="hero-buttons">
+                        <a href="#products" class="btn primary">Lihat Produk</a>
+                        <a href="#services" class="btn secondary">Layanan Kami</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="https://via.placeholder.com/600x400?text=Hero+Image" alt="Hero Image">
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-us">
+            <div class="container">
+                <div class="about-content">
+                    <h3>Tentang KsaInovasi</h3>
+                    <p>KsaInovasi adalah perusahaan teknologi yang berfokus pada pengembangan solusi digital inovatif untuk berbagai kebutuhan bisnis. Kami berkomitmen untuk memberikan solusi terbaik yang disesuaikan dengan kebutuhan unik setiap klien.</p>
+                    <div class="about-cards">
+                        <div class="card">
+                            <i class="fas fa-eye"></i>
+                            <h4>Visi</h4>
+                            <p>Menjadi partner teknologi terpercaya yang membantu bisnis bertransformasi digital.</p>
+                        </div>
+                        <div class="card">
+                            <i class="fas fa-rocket"></i>
+                            <h4>Misi</h4>
+                            <p>Menghadirkan solusi teknologi yang efisien, inovatif, dan mudah digunakan.</p>
+                        </div>
+                        <div class="card">
+                            <i class="fas fa-heart"></i>
+                            <h4>Nilai</h4>
+                            <p>Inovasi, kualitas, dan kepuasan pelanggan adalah prioritas utama kami.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="products" class="products">
+            <div class="container">
+                <h3>Produk Kami</h3>
+                <p class="section-description">Solusi software yang telah terbukti membantu ribuan bisnis meningkatkan efisiensi dan produktivitas.</p>
+                <div class="category-filter">
+                    <button class="filter-btn active" data-category="all">All</button>
+                    <button class="filter-btn" data-category="static">Static</button>
+                    <button class="filter-btn" data-category="dinamis">Dinamis</button>
+                </div>
+                <div class="product-grid">
+                    <!-- Product Cards will be injected here by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <div class="container">
+                <h3>Layanan Kami</h3>
+                <p class="section-description">Tim ahli kami siap membantu mengembangkan solusi teknologi yang sesuai dengan kebutuhan spesifik bisnis Anda.</p>
+                <div class="service-grid">
+                    <!-- Service Cards will be injected here by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h3>Hubungi Kami</h3>
+                <p class="section-description">Siap untuk memulai proyek teknologi Anda? Tim kami siap membantu mewujudkan visi digital bisnis Anda.</p>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h4>Informasi Kontak</h4>
+                        <p><i class="fab fa-whatsapp"></i> WhatsApp: +62 878-8642-5562</p>
+                        <p><i class="fas fa-envelope"></i> Email: hattamuhammadan.hatta@gmail.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Alamat: Jl. Teknologi No. 123, Kota Inovasi</p>
+                    </div>
+                    <div class="contact-form">
+                        <h4>Kirim Pesan</h4>
+                        <form id="whatsappForm">
+                            <div class="form-group">
+                                <label for="name">Nama Anda:</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Anda:</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="messageType">Tipe Pesan:</label>
+                                <select id="messageType" name="messageType">
+                                    <option value="general">Pertanyaan Umum</option>
+                                    <option value="product">Terkait Produk</option>
+                                    <option value="service">Terkait Layanan</option>
+                                    <option value="support">Dukungan Teknis</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Pesan Anda:</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn primary"><i class="fab fa-whatsapp"></i> Kirim via WhatsApp</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-code"></i>
+                    <h3>KsaInovasi</h3>
+                    <p>Partner teknologi terpercaya untuk transformasi digital bisnis Anda.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Produk</h4>
+                    <ul>
+                        <li><a href="#products">POS System</a></li>
+                        <li><a href="#products">ERP Solution</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Layanan</h4>
+                    <ul>
+                        <li><a href="#services">Custom Development</a></li>
+                        <li><a href="#services">Business Automation</a></li>
+                        <li><a href="#services">AI Chatbot</a></li>
+                        <li><a href="#services">DevOps Consulting</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Kontak</h4>
+                    <p>WhatsApp: +62 878-8642-5562</p>
+                    <p>Email: hattamuhammadan.hatta@gmail.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 KsaInovasi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="detailModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h4 id="modalTitle"></h4>
+            <p id="modalDescription"></p>
+            <p id="modalDetails"></p>
+        </div>
+    </div>
+<img src="https://placehold.co/300x200?text=foodscan.png" alt="FoodScan">
+
+    <script src="script.js"></script>
+</body>
+</html>
+
